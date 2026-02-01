@@ -1,5 +1,13 @@
-#-------------------------------------------------------------------------------------------------------
 '''
+Leap year rules (important 💡)
+
+A year is a leap year if:
+
+It is divisible by 4
+
+BUT if it is a century year (divisible by 100), then
+➜ it must also be divisible by 400
+
 #leap year or not:
 #WAP to check weather a given year is a leap year or not
                                year
@@ -33,15 +41,6 @@ else:
     print("its not a leap year")
 #-------------------------------------------------------------------------------------------------------------
 
-'''
-steps
-1)identify the major logic
-2)include the function declaration and within it paste the major logic
-3)analyse the I/P required by the function to start with logic
-4)design the o/p statement
-5)call the function by passing the value to the i/p parameter if any
-6)reuse the o/p of the function by holding it in a variable if any
-'''
 #using functions (leap year)
 def isLeap(y):
      return((y%100!=0 and y%4==0) or y%400==0)     

@@ -16,6 +16,7 @@ def function_name(parameters):
 ---------------------------------------------------------------------------------
 calling a function
 var_name=function_name(arguments) #optional arguments
+res=add(a,b)
 #then reuse the returned value
 #---------------------------------------------------------
 '''
@@ -33,7 +34,9 @@ def addnum(n1, n2):      # function declaration with parameters
 res = addnum(5, 3)       # 5,3 are arguments passed to function
 print(res + 5)           # using returned value #8+5= 13
 print(res - 5)           #8-5= 3
-print(res * 10)          #8*10= 80
+print(res * 10)
+res2=addnum(10,20) 
+print(res2)         #8*10= 80
 
 # Notes:
 # n1, n2 → parameters (local variables used inside function)
@@ -79,4 +82,13 @@ function definition==>
                     uses:
                         -it helps to return one or multiple values from  called function back to function call,that can be reused in further program
                         -it returns back the execution flow of pvm from called function back to function call              
+'''
+'''
+steps to solve the problem using functions:
+1)identify the major logic
+2)include the function declaration and within it paste the major logic
+3)analyse the I/P required by the function to start with logic
+4)design the o/p statement
+5)call the function by passing the value to the i/p parameter if any
+6)reuse the o/p of the function by holding it in a variable if any
 '''
