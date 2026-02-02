@@ -32,7 +32,7 @@ An algorithm is a set of steps or logic used to solve a problem or store/process
 *Represented using square brackets [ ]
 
 #Syntax'''
-arr_name = [data1, data2, data3, ...]
+#arr_name = [data1, data2, data3, ...]
 #Examples
 arr1 = []            # Empty array
 print(arr1)          # []
