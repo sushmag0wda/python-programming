@@ -37,14 +37,18 @@ factorial(4)
 
 🔹 Code '''
 def factorial(n):
+    if n<0:
+        return -1
     if n <= 1:
         return 1
     return n * factorial(n-1)
 
 n = int(input("enter a number: "))
 res = factorial(n)
-print(res)
-
+if res == -1:
+    print("Factorial not defined for negative numbers")
+else:
+    print(res)
 '''🔹 Stack Flow
 factorial(4)
  → factorial(3)

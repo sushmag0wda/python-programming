@@ -54,3 +54,4 @@ findHCF(48,18)
 🔑 EXAM NOTE
 
 Euclidean algorithm is efficient and widely used.'''
+

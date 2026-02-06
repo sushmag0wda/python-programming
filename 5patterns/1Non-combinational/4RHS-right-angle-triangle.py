@@ -77,3 +77,4 @@ for i in range(1,n+1):  #always for rows loop first because we cannot go back to
     for j in range(1,(i+1)): # always column
             print("*",end="")
     print()
+
