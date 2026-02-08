@@ -1,3 +1,14 @@
+#COMBINATIONAL PATTERNS
+'''
+1)LHS half diamond
+*
+**
+***
+****
+***
+**
+*
+'''
 def lhshd(n):
     noc=1
     for i in range(1,n*2):
@@ -8,6 +19,16 @@ def lhshd(n):
             noc+=1
         else:
             noc-=1
+'''
+2)RHS half diamond
+   *
+  **
+ ***
+****
+ ***
+  **
+   *
+'''
 def rhshd(n):
     noc=1
     for i in range(1,n*2):
@@ -20,7 +41,16 @@ def rhshd(n):
             noc+=1
         else:
             noc-=1
-
+'''
+3)diamond
+   *
+  * *
+ * * *
+* * * *
+ * * *
+  * *
+   *
+'''
 def dia(n):
     noc=1
     for i in range(1,n*2):
@@ -33,6 +63,16 @@ def dia(n):
             noc+=1
         else:
             noc-=1
+'''
+4)odd diamond
+       *
+     * * *
+   * * * * *
+ * * * * * * *
+   * * * * *
+     * * *
+       *
+'''
 def odddia(n):
     noc=1
     for i in range(1,n*2):
@@ -45,7 +85,16 @@ def odddia(n):
             noc+=2
         else:
             noc-=2
-
+'''
+5)k
+****
+***
+**
+*
+**
+***
+****
+'''
 def k(n):
     noc=n
     for i in range(1,n*2):
@@ -56,6 +105,16 @@ def k(n):
             noc-=1
         else:
             noc+=1
+'''
+6)k inverse
+****
+ ***
+  **
+   *
+  **
+ ***
+****
+'''
 def kin(n):
     noc=n
     for i in range(1,n*2):
@@ -68,7 +127,16 @@ def kin(n):
             noc-=1
         else:
             noc+=1
-
+'''
+7)Hourglass
+* * * *
+ * * *
+  * *
+   *
+  * *
+ * * *
+* * * *
+'''
 def hg(n):
     noc=n
     for i in range(1,n*2):
@@ -81,6 +149,16 @@ def hg(n):
             noc-=1
         else:
             noc+=1
+'''
+8)Butterfly
+*     *
+**   **
+*** ***
+*******
+*** ***
+**   **
+*     *
+'''
 def bf(n):
     noc=1
     nor=(n*2)-1
