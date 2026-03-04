@@ -25,7 +25,7 @@ def mergecon(arr,start,mid,end):
     i=start
     j=mid+1
     res=[]
-    for k in range(0,(mid+end)+1):
+    for k in range(0,(end-start)+1):
         if i<=mid and j<=end:
             if arr[i]<arr[j]:
                 res.append(arr[i])
@@ -49,3 +49,14 @@ arr=createarray()
 print(f"given array 1 is :{arr}")
 mergedivide(arr,0,(len(arr)-1))
 print(f"resultent array is :{arr}")
+
+'''🧠 How Recursion Happened (Tree View)
+                [4,1,3,2]
+              /            \
+         [4,1]            [3,2]
+        /     \          /     \
+      [4]     [1]      [3]     [2]
+        \     /          \     /
+         [1,4]            [2,3]
+               \        /
+               [1,2,3,4]'''

@@ -39,8 +39,9 @@ a   ← stops here
 📌 Returned list:
 
 [10, 25, 7]'''
-#Check target element in an array
 
+
+#Check target element in an array
 def checktarget(arr, target):
     for i in range(len(arr)):
         if arr[i] == target:
@@ -96,7 +97,7 @@ If matched, return its index; otherwise, report not found.'''
 
 #2️⃣ findlargest(arr) function
 def findlargest(arr):
-    max,maxind=-2147483648,-1         #note      2147483648 this can be written as 2^31
+    max,maxind=-2147483648,-1         #note   2147483648 this can be written as 2^31
     for i in range(0,len(arr)):
         if max<arr[i]:
             max=arr[i]
